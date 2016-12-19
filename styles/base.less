@@ -1,0 +1,291 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: #2F374D;
+}
+
+.comment {
+  color: #7081BE;
+}
+
+.comment.block.preprocessor {
+  color: #7081BE;
+}
+
+.comment.documentation, .comment.block.documentation {
+  color: #7081BE;
+}
+
+.invalid.illegal {
+  color: #E889B5;
+  background-color: #722C40;
+}
+
+.keyword, .storage {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.keyword.operator {
+  font-weight: bold;
+  color: #E4EAF0;
+}
+
+.constant.language, .support.constant {
+  font-weight: bold;
+  color: #E4EAF0;
+}
+
+.storage.type, .support.type {
+  font-style: italic;
+  color: #d3afc5;
+}
+
+.entity.other.attribute-name {
+  color: #90D6CD;
+}
+
+.variable.other {
+  color: #8DC4F0;
+}
+
+.variable.language {
+  color: #B3B2A2;
+}
+
+.entity.name.type, .entity.other.inherited-class, .support.class {
+  color: #E3C78A;
+}
+
+.variable.other.constant {
+  color: #18C9C9;
+}
+
+.constant.character.entity {
+  color: #d67c9b;
+}
+
+.entity.name.exception {
+  color: #d67c9b;
+}
+
+.entity.name.function, .support.function, .keyword.other.name-of-parameter {
+  color: #8be9ee;
+}
+
+.entity.name.section {
+  color: #dabc83;
+}
+
+.entity.name.tag {
+  color: #8db3ff;
+}
+
+.punctuation.definition.tag {
+  color: #5768b0;
+}
+
+.variable.parameter, .support.variable {
+  font-style: italic;
+  color: #18C9C9;
+}
+
+.constant.numeric, .constant.other {
+  color: #18C9C9;
+}
+
+.string:not(.string .source), .constant.character {
+  color: #D5D5CA;
+}
+
+.string.regexp {
+  color: #18C9C9;
+}
+
+.constant.other.symbol {
+  color: #ABD683;
+}
+
+.markup.deleted {
+  color: #CDBBD6;
+  background-color: #3B2A39;
+}
+
+.markup.italic {
+  font-style: italic;
+}
+
+.markup.error {
+  color: #DF7788;
+}
+
+.markup.heading.1 {
+  color: #CC7093;
+}
+
+.markup.inserted {
+  background-color: #2C344D;
+}
+
+.markup.output, .markup.raw {
+  color: #89CEDD;
+}
+
+.markup.prompt {
+  color: #555555;
+}
+
+.markup.bold {
+  font-weight: bold;
+}
+
+.markup.heading {
+  color: #C97595;
+}
+
+.markup.traceback {
+  color: #89CEDD;
+}
+
+.markup.underline {
+  text-decoration: underline;
+}
+
+.meta.diff.range, .meta.diff.index, .meta.separator {
+  color: #8DA6EA;
+}
+
+.meta.diff.header.from-file {
+  color: #E889B5;
+  background-color: #722C40;
+}
+
+.meta.diff.header.to-file {
+  color: #B0F7C3;
+  background-color: #628F50;
+}
+
+.meta.link {
+  color: #92A3E0;
+}
+
+.support.type.property-name {
+  color: #C3CEE3;
+}
+
+.support.constant.property-value, .support.constant.font-name {
+  color: #C3CEE3;
+}
+
+.constant.other.unit, .keyword.other.unit {
+  color: #18C9C9;
+}
+
+.keyword.control.untitled, .entity.other.attribute-name {
+  color: #96fbff;
+}
+
+.keyword.control.at-rule {
+  color: #E3C78A;
+}
+
+.keyword.control.mixin-shorthand {
+  color: #dde9ff;
+}
+
+.variable.parameter.url.sass {
+  color: #C3CEE3;
+}
+
+.meta.brace.round.coffee {
+  color: #798194;
+}
+
+.entity.name.section.markdown {
+  color: #71baff;
+}
+
+.punctuation.definition.heading {
+  color: #4a72ae;
+}
+
+.markup.heading.1 .punctuation.definition.heading {
+  color: #ff0000;
+}
+
+.punctuation.definition.list_item {
+  color: #646877;
+}
+
+.string.other.link.title {
+  color: #C3CEE3;
+}
+
+.string.raw.inline.markdown {
+  color: #cec8d7;
+  background-color: #1f2431;
+}
+
+.punctuation.definition.raw.markdown {
+  color: #5d606e;
+}
+
+.sublimelinter.mark.warning {
+  color: #EDBA00;
+}
+
+.sublimelinter.gutter-mark {
+  color: #FFFFFF;
+}
+
+.sublimelinter.mark.error {
+  color: #DA2000;
+}
