@@ -1,291 +1,275 @@
 @import "syntax-variables";
 
-atom-text-editor, :host {
+atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
-atom-text-editor .gutter, :host .gutter {
+atom-text-editor .gutter {
   background-color: @syntax-gutter-background-color;
   color: @syntax-gutter-text-color;
 }
 
-atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+atom-text-editor .gutter .line-number.cursor-line {
   background-color: @syntax-gutter-background-color-selected;
   color: @syntax-gutter-text-color-selected;
 }
 
-atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+atom-text-editor .gutter .line-number.cursor-line-no-selection {
   color: @syntax-gutter-text-color-selected;
 }
 
-atom-text-editor .wrap-guide, :host .wrap-guide {
+atom-text-editor .wrap-guide {
   color: @syntax-wrap-guide-color;
 }
 
-atom-text-editor .indent-guide, :host .indent-guide {
+atom-text-editor .indent-guide {
   color: @syntax-indent-guide-color;
 }
 
-atom-text-editor .invisible-character, :host .invisible-character {
+atom-text-editor .invisible-character {
   color: @syntax-invisible-character-color;
 }
 
-atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+atom-text-editor .search-results .marker .region {
   background-color: transparent;
   border: @syntax-result-marker-color;
 }
 
-atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+atom-text-editor .search-results .marker.current-result .region {
   border: @syntax-result-marker-color-selected;
 }
 
-atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+atom-text-editor.is-focused .cursor {
   border-color: @syntax-cursor-color;
 }
 
-atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+atom-text-editor.is-focused .selection .region {
   background-color: @syntax-selection-color;
 }
 
-atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line {
   background-color: #2F374D;
 }
 
-.comment {
+.syntax--comment {
   color: #7081BE;
 }
 
-.comment.block.preprocessor {
+.syntax--comment.syntax--block.syntax--preprocessor {
   color: #7081BE;
 }
 
-.comment.documentation, .comment.block.documentation {
+.syntax--comment.syntax--documentation, .syntax--comment.syntax--block.syntax--documentation {
   color: #7081BE;
 }
 
-.invalid.illegal {
+.syntax--invalid.syntax--illegal {
   color: #E889B5;
   background-color: #722C40;
 }
 
-.keyword, .storage {
+.syntax--keyword, .syntax--storage {
   font-weight: bold;
   color: #FFFFFF;
 }
 
-.keyword.operator {
+.syntax--keyword.syntax--operator {
   font-weight: bold;
   color: #E4EAF0;
 }
 
-.constant.language, .support.constant {
+.syntax--constant.syntax--language, .syntax--support.syntax--constant {
   font-weight: bold;
   color: #E4EAF0;
 }
 
-.storage.type, .support.type {
+.syntax--storage.syntax--type, .syntax--support.syntax--type {
   font-style: italic;
   color: #d3afc5;
 }
 
-.entity.other.attribute-name {
+.syntax--entity.syntax--other.syntax--attribute-name {
   color: #90D6CD;
 }
 
-.variable.other {
+.syntax--variable.syntax--other {
   color: #8DC4F0;
 }
 
-.variable.language {
+.syntax--variable.syntax--language {
   color: #B3B2A2;
 }
 
-.entity.name.type, .entity.other.inherited-class, .support.class {
+.syntax--entity.syntax--name.syntax--type, .syntax--entity.syntax--other.syntax--inherited-class, .syntax--support.syntax--class {
   color: #E3C78A;
 }
 
-.variable.other.constant {
+.syntax--variable.syntax--other.syntax--constant {
   color: #18C9C9;
 }
 
-.constant.character.entity {
+.syntax--constant.syntax--character.syntax--entity {
   color: #d67c9b;
 }
 
-.entity.name.exception {
+.syntax--entity.syntax--name.syntax--exception {
   color: #d67c9b;
 }
 
-.entity.name.function, .support.function, .keyword.other.name-of-parameter {
+.syntax--entity.syntax--name.syntax--function, .syntax--support.syntax--function, .syntax--keyword.syntax--other.syntax--name-of-parameter {
   color: #8be9ee;
 }
 
-.entity.name.section {
+.syntax--entity.syntax--name.syntax--section {
   color: #dabc83;
 }
 
-.entity.name.tag {
+.syntax--entity.syntax--name.syntax--tag {
   color: #8db3ff;
 }
 
-.punctuation.definition.tag {
+.syntax--punctuation.syntax--definition.syntax--tag {
   color: #5768b0;
 }
 
-.variable.parameter, .support.variable {
+.syntax--variable.syntax--parameter, .syntax--support.syntax--variable {
   font-style: italic;
   color: #18C9C9;
 }
 
-.constant.numeric, .constant.other {
+.syntax--constant.syntax--numeric, .syntax--constant.syntax--other {
   color: #18C9C9;
 }
 
-.string:not(.string .source), .constant.character {
+.syntax--string:not(.syntax--string .syntax--source), .syntax--constant.syntax--character {
   color: #D5D5CA;
 }
 
-.string.regexp {
+.syntax--string.syntax--regexp {
   color: #18C9C9;
 }
 
-.constant.other.symbol {
+.syntax--constant.syntax--other.syntax--symbol {
   color: #ABD683;
 }
 
-.markup.deleted {
+.syntax--markup.syntax--deleted {
   color: #CDBBD6;
   background-color: #3B2A39;
 }
 
-.markup.italic {
+.syntax--markup.syntax--italic {
   font-style: italic;
 }
 
-.markup.error {
+.syntax--markup.syntax--error {
   color: #DF7788;
 }
 
-.markup.heading.1 {
+.syntax--markup.syntax--heading.syntax--1 {
   color: #CC7093;
 }
 
-.markup.inserted {
+.syntax--markup.syntax--inserted {
   background-color: #2C344D;
 }
 
-.markup.output, .markup.raw {
+.syntax--markup.syntax--output, .syntax--markup.syntax--raw {
   color: #89CEDD;
 }
 
-.markup.prompt {
+.syntax--markup.syntax--prompt {
   color: #555555;
 }
 
-.markup.bold {
+.syntax--markup.syntax--bold {
   font-weight: bold;
 }
 
-.markup.heading {
+.syntax--markup.syntax--heading {
   color: #C97595;
 }
 
-.markup.traceback {
+.syntax--markup.syntax--traceback {
   color: #89CEDD;
 }
 
-.markup.underline {
+.syntax--markup.syntax--underline {
   text-decoration: underline;
 }
 
-.meta.diff.range, .meta.diff.index, .meta.separator {
+.syntax--meta.syntax--diff.syntax--range, .syntax--meta.syntax--diff.syntax--index, .syntax--meta.syntax--separator {
   color: #8DA6EA;
 }
 
-.meta.diff.header.from-file {
+.syntax--meta.syntax--diff.syntax--header.syntax--from-file {
   color: #E889B5;
   background-color: #722C40;
 }
 
-.meta.diff.header.to-file {
+.syntax--meta.syntax--diff.syntax--header.syntax--to-file {
   color: #B0F7C3;
   background-color: #628F50;
 }
 
-.meta.link {
+.syntax--meta.syntax--link {
   color: #92A3E0;
 }
 
-.support.type.property-name {
+.syntax--support.syntax--type.syntax--property-name {
   color: #C3CEE3;
 }
 
-.support.constant.property-value, .support.constant.font-name {
+.syntax--support.syntax--constant.syntax--property-value, .syntax--support.syntax--constant.syntax--font-name {
   color: #C3CEE3;
 }
 
-.constant.other.unit, .keyword.other.unit {
+.syntax--constant.syntax--other.syntax--unit, .syntax--keyword.syntax--other.syntax--unit {
   color: #18C9C9;
 }
 
-.keyword.control.untitled, .entity.other.attribute-name {
-  color: #96fbff;
-}
-
-.keyword.control.at-rule {
+.syntax--keyword.syntax--control.syntax--at-rule {
   color: #E3C78A;
 }
 
-.keyword.control.mixin-shorthand {
+.syntax--keyword.syntax--control.syntax--mixin-shorthand {
   color: #dde9ff;
 }
 
-.variable.parameter.url.sass {
+.syntax--variable.syntax--parameter.syntax--url.syntax--sass {
   color: #C3CEE3;
 }
 
-.meta.brace.round.coffee {
+.syntax--meta.syntax--brace.syntax--round.syntax--coffee {
   color: #798194;
 }
 
-.entity.name.section.markdown {
+.syntax--entity.syntax--name.syntax--section.syntax--markdown {
   color: #71baff;
 }
 
-.punctuation.definition.heading {
+.syntax--punctuation.syntax--definition.syntax--heading {
   color: #4a72ae;
 }
 
-.markup.heading.1 .punctuation.definition.heading {
+.syntax--markup.syntax--heading.syntax--1 .syntax--punctuation.syntax--definition.syntax--heading {
   color: #ff0000;
 }
 
-.punctuation.definition.list_item {
+.syntax--punctuation.syntax--definition.syntax--list_item {
   color: #646877;
 }
 
-.string.other.link.title {
+.syntax--string.syntax--other.syntax--link.syntax--title {
   color: #C3CEE3;
 }
 
-.string.raw.inline.markdown {
+.syntax--string.syntax--raw.syntax--inline.syntax--markdown {
   color: #cec8d7;
   background-color: #1f2431;
 }
 
-.punctuation.definition.raw.markdown {
+.syntax--punctuation.syntax--definition.syntax--raw.syntax--markdown {
   color: #5d606e;
-}
-
-.sublimelinter.mark.warning {
-  color: #EDBA00;
-}
-
-.sublimelinter.gutter-mark {
-  color: #FFFFFF;
-}
-
-.sublimelinter.mark.error {
-  color: #DA2000;
 }

@@ -1,3 +1,7 @@
+## 1.1.2 - Bugfix release
+
+*   Fixed deprecation warnings for Atom 1.13.
+
 ## 1.1.1 - Bugfix release
 
 *   Fixed preview URL
