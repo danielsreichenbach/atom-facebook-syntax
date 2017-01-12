@@ -1,7 +1,7 @@
 {
   "name": "facebook-syntax-theme",
   "theme": "syntax",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "An atom theme based on Facebook's typical washed up blues and pastels",
   "keywords": [
     "syntax",
